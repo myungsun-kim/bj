@@ -1,0 +1,8 @@
+4
+aba
+abab
+abcabc
+a
+
+
+1
