@@ -1,19 +1,17 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_15650_N과M2 {
+public class Main_bj_15651_N과M3 {
 	static int n, m;
 	static int[] selected;
-	static boolean[] visited;
 	static StringBuilder sb = new StringBuilder();
 	
 	public static void main(String[] args) throws Exception{
-		System.setIn(new FileInputStream("res/input_bj_15650.txt"));
+		System.setIn(new FileInputStream("res/input_bj_15651.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		n =Integer.parseInt(st.nextToken());
 		m =Integer.parseInt(st.nextToken());
-		visited = new boolean[n+1];
 		selected = new int[m];
 		//1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열. 순열
 		perm(0);
@@ -32,13 +30,11 @@ public class Main_bj_15650_N과M2 {
 			return;
 		}
 		
-		
+		//비내림차순
 		for(int i=1;i<=n;i++) {
-			if(!visited[i] && (cnt==0 || selected[cnt-1]<i)) {//오름차순
-				visited[i]=true;
+			if(cnt==0 || (cnt>0 && selected[cnt-1]<=i)) {
 				selected[cnt]=i;
-				perm(cnt+1);
-				visited[i]=false;
+				perm(cnt+1);				
 			}
 		}
 	}

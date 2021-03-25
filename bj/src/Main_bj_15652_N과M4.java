@@ -1,14 +1,14 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_15650_N과M2 {
+public class Main_bj_15652_N과M4 {
 	static int n, m;
 	static int[] selected;
 	static boolean[] visited;
 	static StringBuilder sb = new StringBuilder();
 	
 	public static void main(String[] args) throws Exception{
-		System.setIn(new FileInputStream("res/input_bj_15650.txt"));
+		System.setIn(new FileInputStream("res/input_bj_15649.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		n =Integer.parseInt(st.nextToken());
