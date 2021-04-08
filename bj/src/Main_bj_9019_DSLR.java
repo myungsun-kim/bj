@@ -60,8 +60,8 @@ public class Main_bj_9019_DSLR {
 	}
 	
 	static int D(int n) {
-		if(2*n>9999) return 2*n%10000;
-		return 2*n;
+//		if(2*n>9999) return ;
+		return 2*n%10000;
 	}
 	static int S(int n) {
 		if(n==0) return 9999;
