@@ -11,7 +11,7 @@ public class Main_bj_16174_점프왕쩰리Large_bfs {
 			this.y = y;
 		}
 	}
-	static int[] dx= {1,0};//오른쪽,아래쪽
+	static int[] dx= {1,0};//아래쪽,오른쪽
 	static int[] dy= {0,1};
 	static int N;
 	static int[][] map;
@@ -39,7 +39,7 @@ public class Main_bj_16174_점프왕쩰리Large_bfs {
 		q.offer(new Node(0,0));
 		while(!q.isEmpty()) {
 			Node tmp=q.poll();
-			if(map[tmp.x][tmp.y]==-1) {
+			if(map[tmp.x][tmp.y]==-1) {//승리지점 도달
 				System.out.print("HaruHaru");
 				return;
 			}
