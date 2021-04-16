@@ -7,7 +7,7 @@ public class Main_bj_20208_진우의민트초코우유 {
 	static int[] dx= {0,0,-1,1};//상하좌우
 	static int[] dy= {1,-1,0,0};
 	static boolean[] visited;
-	static ArrayList<Node> mint = new ArrayList<>();
+	static ArrayList<Node> mint = new ArrayList<>();//민트초코의 위치
 	
 	static class Node{
 		int x;
@@ -90,7 +90,7 @@ public class Main_bj_20208_진우의민트초코우유 {
 		return cnt;
 	}
 	
-	static int distance(int x1, int y1, int x2, int y2) {
+	static int distance(int x1, int y1, int x2, int y2) {//거리 구하기
 		return Math.abs(x1-x2)+Math.abs(y1-y2);
 	}
 }

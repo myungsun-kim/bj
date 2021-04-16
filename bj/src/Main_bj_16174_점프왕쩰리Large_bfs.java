@@ -37,6 +37,7 @@ public class Main_bj_16174_점프왕쩰리Large_bfs {
 		visited[0][0]=true;
 		
 		q.offer(new Node(0,0));
+		
 		while(!q.isEmpty()) {
 			Node tmp=q.poll();
 			if(map[tmp.x][tmp.y]==-1) {//승리지점 도달
