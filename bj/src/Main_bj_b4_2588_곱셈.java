@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main_bj_2588_곱셈 {
+public class Main_bj_b4_2588_곱셈 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();

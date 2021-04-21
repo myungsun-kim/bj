@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class Main_bj_1001_AminusB {
+public class Main_bj_b4_1008_AdivisionB {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+		double a = sc.nextInt();
+		double b = sc.nextInt();
 		sc.close();
-		System.out.print(a-b);
+		System.out.print(a/b);
 	}
 }

@@ -1,19 +1,18 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_10950_AplusB3 {
+public class Main_bj_b3_11021_AplusB7 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
-		StringTokenizer str;
-		int A,B;
+		StringTokenizer st;
 		int T = Integer.parseInt(br.readLine());
-		
-		for(int i=0;i<T;i++) {
-			str = new StringTokenizer(br.readLine());
-			A = Integer.parseInt(str.nextToken());
-			B = Integer.parseInt(str.nextToken());
-			sb.append(A+B).append("\n");
+		int a, b;
+		for(int i=1;i<=T;i++) {
+			st = new StringTokenizer(br.readLine());
+			a = Integer.parseInt(st.nextToken());
+			b = Integer.parseInt(st.nextToken());
+			sb.append("Case #").append(i).append(": ").append(a+b).append("\n");
 		}
 		br.close();
 		sb.setLength(sb.length()-1);

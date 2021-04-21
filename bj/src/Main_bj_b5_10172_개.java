@@ -1,5 +1,5 @@
 
-public class Main_bj_10172_개 {
+public class Main_bj_b5_10172_개 {
 	public static void main(String[] args) {
 		System.out.println("|\\_/|");
 		System.out.println("|q p|   /}");

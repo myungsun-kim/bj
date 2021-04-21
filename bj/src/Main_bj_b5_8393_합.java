@@ -1,22 +1,17 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_2439_별찍기2 {
+public class Main_bj_b5_8393_합 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		int n = Integer.parseInt(br.readLine());
+		int sum=0;
 		for(int i=1;i<=n;i++) {
-			for(int j=n-i;j>0;j--) {
-				sb.append(" ");
-			}
-			for(int j=1;j<=i;j++) {
-				sb.append("*");
-			}
-			sb.append("\n");
+			sum+=i;
 		}
 		br.close();
-		sb.setLength(sb.length()-1);
+		sb.append(sum);
 		System.out.print(sb);
 	}
 }
