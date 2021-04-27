@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_2839_설탕배달 {
+public class Main_bj_b1_2839_설탕배달 {
 	static int N;
 	
 	public static void main(String[] args) throws Exception{

@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main_bj_2577_숫자의개수 {
+public class Main_bj_b2_2577_숫자의개수 {
 
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_2577.txt"));

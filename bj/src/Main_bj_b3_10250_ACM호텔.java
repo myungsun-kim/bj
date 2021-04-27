@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_10250_ACM호텔 {
+public class Main_bj_b3_10250_ACM호텔 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10250.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

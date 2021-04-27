@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_10163_색종이 {
+public class Main_bj_b1_10163_색종이 {
 	//격자 100X100
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10163.txt"));

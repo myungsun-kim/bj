@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 import java.math.BigInteger;
-public class Main_bj_10757_큰수AplusB {
+public class Main_bj_b5_10757_큰수AplusB {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10757.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
