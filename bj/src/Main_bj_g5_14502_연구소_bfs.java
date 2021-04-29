@@ -3,7 +3,7 @@ import java.util.*;
 //0:빈칸 1:벽 2:바이러스
 //새로 세울 수 있는 벽의 개수는 3개
 //안전 영역:벽을 3개 세운 뒤 바이러스가 퍼질 수 없는 곳
-public class Main_bj_14502_연구소_bfs {
+public class Main_bj_g5_14502_연구소_bfs {
 	static class Node{
 		int x;
 		int y;
@@ -14,7 +14,7 @@ public class Main_bj_14502_연구소_bfs {
 			this.y = y;
 		}
 	}
-	static int[] di= {0,0,-1,1};//상하좌우
+	static int[] di= {0,0,-1,1};
 	static int[] dj= {1,-1,0,0};
 	static int N,M,answer=0;
 	static int[][] map;
