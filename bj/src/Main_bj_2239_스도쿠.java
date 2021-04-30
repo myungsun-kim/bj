@@ -18,7 +18,7 @@ public class Main_bj_2239_스도쿠 {
 			tmp=br.readLine();
 			for(int j=0;j<size;j++) {
 				map[i][j]=tmp.charAt(j)-'0';
-				if(map[i][j]==0) selected.add(new int[] {i,j});
+				if(map[i][j]==0) selected.add(new int[] {i,j});//값이 0인 경우. 값을 찾아야하는 위치
 			}
 		}
 		selected_size=selected.size();
