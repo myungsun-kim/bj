@@ -3,7 +3,7 @@ import java.util.*;
 // 크기가 NxN인 도시. 도시의 칸은 (r,c) 0:빈칸 1:집 2:치킨집
 // 치킨거리 : 집(r1,c1)과 가장 가까운 치킨집(r2,c2) 사이의 거리|r1-r2|+|c1-c2|
 // 도시의 치킨거리 = 모든 집의 치킨 거리의 합
-public class Main_bj_15686_치킨배달 {
+public class Main_bj_g5_15686_치킨배달 {
 	static int[][] map;
 	static ArrayList<Dot> home = new ArrayList<Dot>();
 	static ArrayList<Dot> chicken = new ArrayList<Dot>();
