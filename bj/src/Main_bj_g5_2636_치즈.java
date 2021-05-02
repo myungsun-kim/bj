@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 //가장 바깥 쪽의 치즈는 한 시간 후 녹아 없어짐
 //외부공기, 내부공기, 치즈로 나눠서 계산
-public class Main_bj_2636_치즈 {
+public class Main_bj_g5_2636_치즈 {
 	static class Node{
 		int x;
 		int y;
@@ -13,7 +13,7 @@ public class Main_bj_2636_치즈 {
 			this.y = y;
 		}
 	}
-	static int[] di= {1,0,-1,0};//우 상 좌 하
+	static int[] di= {1,0,-1,0};
 	static int[] dj= {0,1,0,-1};
 	static int height, width, cnt, answer_cnt, time; //세로, 가로
 	static int[][] arr;
