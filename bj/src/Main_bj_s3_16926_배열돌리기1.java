@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_16926_배열돌리기1 {
+public class Main_bj_s3_16926_배열돌리기1 {
 	//주어지는 배열에 따라 돌려야하는 개수가 달라짐. 이는 행, 열 중 낮은 값을 2로 나누면 구할 수 있음
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_16926.txt"));
