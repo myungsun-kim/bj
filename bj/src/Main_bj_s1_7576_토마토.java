@@ -1,9 +1,9 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_7576_토마토 {
+public class Main_bj_s1_7576_토마토 {
 	static int M,N,answer;
-	static int[] dx= {0,1,0,-1};//상우하좌
+	static int[] dx= {0,1,0,-1};
 	static int[] dy= {1,0,-1,0};
 	static int[][] storage;
 	
