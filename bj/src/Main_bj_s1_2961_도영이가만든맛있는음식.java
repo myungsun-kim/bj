@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_2961_도영이가만든맛있는음식 {
+public class Main_bj_s1_2961_도영이가만든맛있는음식 {
 	static StringBuilder sb = new StringBuilder();
 	static int[][] taste;
 	static boolean[] visited;
