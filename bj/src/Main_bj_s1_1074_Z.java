@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_1074_Z {
+public class Main_bj_s1_1074_Z {
 	static int N,n,r,c,cnt;
 	static int[] dx = {0, 0, 1, 1};//지그재그
 	static int[] dy = {0, 1, 0, 1};
