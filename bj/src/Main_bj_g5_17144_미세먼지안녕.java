@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_17144_미세먼지안녕 {
+public class Main_bj_g5_17144_미세먼지안녕 {
 	static int R,C,T;
 	static int[] air;//공기 청정기 위치
 	static int[][] map, spread_map;
-	static int[] dx= {0,1,0,-1};//상우하좌
+	static int[] dx= {0,1,0,-1};
 	static int[] dy= {1,0,-1,0};
 	
 	public static void main(String[] args) throws Exception{
