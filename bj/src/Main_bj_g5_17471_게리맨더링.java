@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_17471_게리맨더링 {
+public class Main_bj_g5_17471_게리맨더링 {
 	static int N,answer;
 	static int[] people;//인구 수
 	static int[][] adj;//도시 인접 구역
