@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_1978_소수찾기 {
+public class Main_bj_s4_1978_소수찾기 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1978.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
