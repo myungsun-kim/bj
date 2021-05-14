@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_1065_한수 {
+public class Main_bj_s4_1065_한수 {
 	static int cnt=0;
 	
 	public static void main(String[] args) throws Exception{
