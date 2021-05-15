@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_1011_FlymetotheAlphaCentauri {
+public class Main_bj_s1_1011_FlymetotheAlphaCentauri {
 	static int t, min,x,y;
 	static StringBuilder sb = new StringBuilder();
 	static StringTokenizer st;
