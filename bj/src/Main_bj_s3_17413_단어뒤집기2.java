@@ -10,7 +10,7 @@ import java.util.*;
 // 태그는 큐, 단어는 스택으로 구현한다
 public class Main_bj_s3_17413_단어뒤집기2 {
 	public static void main(String[] args) throws Exception{
-//		System.setIn(new FileInputStream("res/input_bj_17413.txt"));
+		System.setIn(new FileInputStream("res/input_bj_17413.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		char[] input = br.readLine().toCharArray();
