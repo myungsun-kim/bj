@@ -32,10 +32,10 @@ public class Main_bj_s1_2178_미로탐색 {
 		System.out.print(answer);
 	}
 	
-	static void bfs(int start_row, int start_col) {
+	static void bfs(int row, int col) {
 		Queue<int[]> q = new LinkedList<>();
-		q.offer(new int[] {start_row, start_col, 1});
-		visited[start_row][start_col] = true;
+		q.offer(new int[] {row, col, 1});
+		visited[row][col] = true;
 		
 		while(!q.isEmpty()) {
 			int[] cur = q.poll();
