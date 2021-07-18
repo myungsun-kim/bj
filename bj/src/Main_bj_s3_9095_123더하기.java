@@ -6,6 +6,7 @@ public class Main_bj_s3_9095_123더하기 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		int n = Integer.parseInt(br.readLine());
+
 		int[] dp;
 		for(int i=0;i<n;i++) {
 			int num = Integer.parseInt(br.readLine());
