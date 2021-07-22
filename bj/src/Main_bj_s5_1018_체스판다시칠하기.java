@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_1018_체스판다시칠하기 {
+public class Main_bj_s5_1018_체스판다시칠하기 {
 	static char[][] map;
 	static int cnt = Integer.MAX_VALUE;
 	public static void main(String[] args) throws Exception{
