@@ -32,6 +32,6 @@ public class Main_bj_s1_6064_카잉달력 {
 				return M*i+x;
 			}
 		}
-		return -1;
+		return -1; //해당 해 없음
 	}
 }
