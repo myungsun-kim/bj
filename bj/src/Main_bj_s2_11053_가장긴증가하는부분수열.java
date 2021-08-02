@@ -26,8 +26,6 @@ public class Main_bj_s2_11053_가장긴증가하는부분수열 {
 			length[i]+=sum;
 			if(length[i]>max) max=length[i];
 		}
-		
-		System.out.print(max);
-		
+		System.out.print(max);	
 	}
 }
