@@ -9,7 +9,6 @@ public class Main_bj_b3_2455_지능형기차 {
 		System.setIn(new FileInputStream("res/input_bj_2455.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		final int count = 4; //역의 개수
-		int[] train = new int[count];
 		
 		int max = 0; //최대 사람 수
 		int sum = 0; //현재 사람 수
