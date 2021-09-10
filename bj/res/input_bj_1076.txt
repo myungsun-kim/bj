@@ -1,0 +1,17 @@
+yellow
+violet
+red
+
+4700
+--
+orange
+red
+blue
+
+32000000
+--
+white
+white
+white
+
+99000000000
