@@ -42,7 +42,5 @@ public class Main_bj_b1_10163_색종이 {
 		br.close();
 		sb.setLength(sb.length()-1);
 		System.out.print(sb);
-		
-
 	}
 }
