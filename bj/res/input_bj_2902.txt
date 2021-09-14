@@ -1,0 +1,11 @@
+Knuth-Morris-Pratt
+
+KMP
+--
+Mirko-Slavko
+
+MS
+--
+Pasko-Patak
+
+PP
