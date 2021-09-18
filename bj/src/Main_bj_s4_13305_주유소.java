@@ -22,7 +22,7 @@ public class Main_bj_s4_13305_주유소 {
 		for(int i=0;i<n;i++) price[i] = Integer.parseInt(st.nextToken());
 		
 		long total = 0;//비용
-		long minPrice = price[0]; //최소 비용
+		long minPrice = price[0];//최소 비용
 		
 		for(int i=0;i<n-1;i++) {
 			if(minPrice>price[i]) minPrice = price[i];
