@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 // N장의 카드 중 가장 많이 가지고 있는 정수 구하기. 가장 많이 가지고 있는 정수가 여러가지라면 작은 것 출력
-public class Main_bj_11652_s4_카드 {
+public class Main_bj_s4_11652_카드 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_11652.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
