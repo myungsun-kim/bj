@@ -7,12 +7,11 @@ public class Main_bj_b3_1212_8진수2진수 {
 		System.setIn(new FileInputStream("res/input_bj_1212.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String n = br.readLine();
+		String[] arr = {"000","001","010","011","100","101","110","111"};
 		StringBuilder sb = new StringBuilder();
-		for(int i=0;i<n.length();i++) {
-			String tmp = Integer.toBinaryString(n.charAt(i)-'0');	
-			if(i!=0 && tmp.length()==1) sb.append("00");
-			if(i!=0 && tmp.length()==2) sb.append("0");
-			sb.append(tmp);
+		sb.append(Integer.toBinaryString(n.charAt(0)-'0'));
+		for(int i=1;i<n.length();i++) {
+			sb.append(arr[n.charAt(i)-'0']);
 		}
 		br.close();
 		System.out.print(sb.toString());
