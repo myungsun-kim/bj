@@ -24,7 +24,6 @@ public class Main_bj_s5_10610_30 {
 					sb.append(i);
 				}
 			}
-			
 			System.out.print(sb.toString());
 		}else {
 			System.out.print(-1);
