@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.*;
+
 // 벼락치기 공부법: 30분간 공부한 후 휴식을 취한 후 다시 30분 공부를 시작
 // 한 챕터를 모두 공부하는 즉시 다음 챕터 공부 시작. 30분이 지나면 공부하던 챕터는 덮고 넘어감
 public class Main_bj_b1_23739_벼락치기 {
@@ -17,7 +17,6 @@ public class Main_bj_b1_23739_벼락치기 {
 				count++;
 			}else { //현재 챕터를 공부하는 시간이 남아있는 시간보다 큼
 				if(cur>=tmp/2+tmp%2) {
-					System.out.println(tmp+" "+cur+" "+tmp/2);
 					count++; //절반 이상 공부했다면
 				}
 				cur=30; //공부하는 시간 초기화
