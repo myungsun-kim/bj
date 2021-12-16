@@ -33,19 +33,20 @@ public class Main_bj_s5_2822_점수계산 {
 		br.close();
 		System.out.print(sb.toString());
 	}
-}
-
-class Score implements Comparable<Score>{
-	int no;
-	int score;
 	
-	Score(int no, int score) {
-		this.no = no;
-		this.score = score;
-	}
-
-	@Override
-	public int compareTo(Score o) { //점수를 기준으로 내림차순 정렬
-		return Integer.compare(o.score, this.score);
+	static class Score implements Comparable<Score>{
+		int no;
+		int score;
+		
+		Score(int no, int score) {
+			this.no = no;
+			this.score = score;
+		}
+		
+		@Override
+		public int compareTo(Score o) { //점수를 기준으로 내림차순 정렬
+			return Integer.compare(o.score, this.score);
+		}
 	}
 }
+
