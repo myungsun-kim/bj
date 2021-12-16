@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
-public class Main_bj_s4_10826_숫자카드2 {
+public class Main_bj_s4_10816_숫자카드2 {
 	public static void main(String[] args) throws Exception{
-		System.setIn(new FileInputStream("res/input_bj_10826.txt"));
+		System.setIn(new FileInputStream("res/input_bj_10816.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		int[] cnt = new int[20000001];//숫자의 범위가 -10000000~10000000
