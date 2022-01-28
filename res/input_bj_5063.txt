@@ -1,0 +1,8 @@
+3
+0 100 70
+100 130 30
+-100 -70 40
+
+advertise
+does not matter
+do not advertise
