@@ -7,10 +7,9 @@ public class Main_bj_s4_10866_덱 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Deque<Integer> deque = new ArrayDeque<>();
 		int N = Integer.parseInt(br.readLine());
-		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		for(int i=0;i<N;i++) {
-			st=new StringTokenizer(br.readLine());
+			StringTokenizer st=new StringTokenizer(br.readLine());
 			switch(st.nextToken()) {
 			case "push_front":
 				deque.addFirst(Integer.parseInt(st.nextToken()));
