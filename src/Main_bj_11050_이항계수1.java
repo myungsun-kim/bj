@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 //이항계수:이항정리에서 전계된 항의 계수
-public class Main_bj_b1_11050_이항계수1 {
+public class Main_bj_11050_이항계수1 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_11050.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

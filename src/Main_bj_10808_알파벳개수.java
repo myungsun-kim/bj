@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main_bj_b2_10808_알파벳개수 {
+public class Main_bj_10808_알파벳개수 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10808.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

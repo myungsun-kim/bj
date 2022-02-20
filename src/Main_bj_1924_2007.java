@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 // 2007년 1월 1일은 월요일. 그렇다면 2007년 x월 y일은 무슨 요일일까? 이를 알아내는 프로그램 작성
-public class Main_bj_b1_1924_2007 {
+public class Main_bj_1924_2007 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_1924.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

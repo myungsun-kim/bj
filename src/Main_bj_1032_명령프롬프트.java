@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 // 파일 이름의 개수 n. 파일 이름의 길이는 모두 같음
 // 가능한 ?를 적게 사용하며 주어진 파일 이름을 모두 검색할 수 있는 패턴을 구하여라
-public class Main_bj_b1_1032_명령프롬프트 {
+public class Main_bj_1032_명령프롬프트 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1032.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
