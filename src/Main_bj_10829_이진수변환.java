@@ -1,7 +1,7 @@
 import java.io.*;
 import java.math.BigInteger;
 
-public class Main_bj_b2_10829_이진수변환 {
+public class Main_bj_10829_이진수변환 {
 	static StringBuilder sb = new StringBuilder();
 	static BigInteger two = new BigInteger("2");
 	static BigInteger zero = new BigInteger("0");

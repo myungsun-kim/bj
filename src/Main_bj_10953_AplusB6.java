@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_b2_10953_AplusB6 {
+public class Main_bj_10953_AplusB6 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10953.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
