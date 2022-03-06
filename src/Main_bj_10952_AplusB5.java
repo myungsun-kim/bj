@@ -1,18 +1,18 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_b3_11021_AplusB7 {
+public class Main_bj_10952_AplusB5 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st;
-		int T = Integer.parseInt(br.readLine());
-		int a, b;
-		for(int i=1;i<=T;i++) {
+		int a,b;
+		while(true) {
 			st = new StringTokenizer(br.readLine());
 			a = Integer.parseInt(st.nextToken());
 			b = Integer.parseInt(st.nextToken());
-			sb.append("Case #").append(i).append(": ").append(a+b).append("\n");
+			if(a==0 && b==0) break;
+			sb.append(a+b).append("\n");
 		}
 		br.close();
 		sb.setLength(sb.length()-1);

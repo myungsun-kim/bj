@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_b3_11022_AplusB8 {
+public class Main_bj_11021_AplusB7 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
@@ -12,7 +12,7 @@ public class Main_bj_b3_11022_AplusB8 {
 			st = new StringTokenizer(br.readLine());
 			a = Integer.parseInt(st.nextToken());
 			b = Integer.parseInt(st.nextToken());
-			sb.append("Case #").append(i).append(": ").append(a).append(" + ").append(b).append(" = ").append(a+b).append("\n");
+			sb.append("Case #").append(i).append(": ").append(a+b).append("\n");
 		}
 		br.close();
 		sb.setLength(sb.length()-1);
