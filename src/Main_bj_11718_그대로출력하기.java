@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_b3_11718_그대로출력하기 {
+public class Main_bj_11718_그대로출력하기 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_11718.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
