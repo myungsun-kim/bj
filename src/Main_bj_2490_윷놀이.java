@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 // 배 0 등 1
 // A도(배 한 개, 등 세 개), B개(배 두 개, 등 두 개), C걸(배 세 개, 등 한 개), D윷(배 네 개), E모(등 네 개)
-public class Main_bj_b3_2490_윷놀이 {
+public class Main_bj_2490_윷놀이 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_2490.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

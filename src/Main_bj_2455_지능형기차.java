@@ -4,7 +4,7 @@ import java.util.*;
 // 기차는 역 번호 순서대로 운행한다
 // 각 역에서 현재 기차에 있는 사람보다 더 많은 사람이 내리는 경우는 없다
 // 기차의 정원은 최대 10000명이고 정원을 초과하여 타는 경우는 없다
-public class Main_bj_b3_2455_지능형기차 {
+public class Main_bj_2455_지능형기차 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_2455.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
