@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 // 총 n개의 문자열로 이루어진 집합 S가 주어진다
 // 입력으로 주어지는 m개의 문자열 중에서 집합 s에 포함되어 있는 것이 총 몇 개인지 구하여라
-public class Main_bj_s3_14425_문자열집합 {
+public class Main_bj_14425_문자열집합 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_14425.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
