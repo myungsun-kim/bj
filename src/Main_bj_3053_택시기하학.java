@@ -3,7 +3,7 @@ import java.io.*;
 // 반지름 R이 주어졌을 때, 유클리드 기하학에서 원의 넓이와 택시 기하학에서 원의 넓이를 구하여라
 // 유클리드 기하학에서의 원의 넓이 PI*R*R
 // 택시 기하학에서의 원의 넓이 2*R*R
-public class Main_bj_b3_3053_택시기하학 {
+public class Main_bj_3053_택시기하학 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_3053.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

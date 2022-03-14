@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 // 세 점이 주어졌을 때, 축에 평행한 직사각형을 만들기 위해서 필요한 네 번째 점 찾기
 // 좌표는 1보다 크거나 같고 1000보다 작거나 같은 정수
-public class Main_bj_b3_3009_네번째점 {
+public class Main_bj_3009_네번째점 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_3009.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
