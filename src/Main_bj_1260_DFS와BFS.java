@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_s2_1260_DFS와BFS {
+public class Main_bj_1260_DFS와BFS {
 	static int n,m,v;
 	static boolean[][] matrix;
 	static boolean[] visited;
