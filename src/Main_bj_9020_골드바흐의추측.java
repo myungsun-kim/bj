@@ -6,7 +6,7 @@ import java.util.*;
 // 10000보다 작거나 같은 모든 짝수 n에 대한 골드바흐 파티션은 존재한다
 // n의 골드바흐 파티션을 출력하는 프로그램 작성. 
 // 가능한 n의 골드바흐 파티션이 여러가지라면 두 소수의 차이가 가장 작은 것 출력
-public class Main_bj_s1_9020_골드바흐의추측 {
+public class Main_bj_9020_골드바흐의추측 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_9020.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
