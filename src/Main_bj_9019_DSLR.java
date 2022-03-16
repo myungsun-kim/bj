@@ -1,9 +1,10 @@
 import java.io.*;
 import java.util.*;
 //n의 네 자리수 d1,d2,d3,d4
-public class Main_bj_g5_9019_DSLR {
+public class Main_bj_9019_DSLR {
 	static boolean[] visited;//방문체크
 	static StringBuilder sb=new StringBuilder();
+	
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_9019.txt"));
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
@@ -30,7 +31,6 @@ public class Main_bj_g5_9019_DSLR {
 		Queue<Node> q = new LinkedList<>();
 		q.offer(new Node(A,""));
 		visited[A]=true;//방문 처리
-		String answer="";
 		
 		while(!q.isEmpty()) {
 			Node tmp = q.poll();
@@ -60,25 +60,33 @@ public class Main_bj_g5_9019_DSLR {
 	}
 	
 	static int D(int n) {
-//		if(2*n>9999) return ;
 		return 2*n%10000;
 	}
+	
 	static int S(int n) {
 		if(n==0) return 9999;
 		return n-1;
 	}
+	
 	static int L(int n) {
 		int d1=n/1000;
-		int d2=n%1000/100;
-		int d3=n%100/10;
-		int d4=n%10;
+		n%=1000;
+		int d2=n/100;
+		n%=100;
+		int d3=n/10;
+		n%=10;
+		int d4=n;
 		return d2*1000+d3*100+d4*10+d1;
 	}
+	
 	static int R(int n) {
 		int d1=n/1000;
-		int d2=n%1000/100;
-		int d3=n%100/10;
-		int d4=n%10;
+		n%=1000;
+		int d2=n/100;
+		n%=100;
+		int d3=n/10;
+		n%=10;
+		int d4=n;
 		return d4*1000+d1*100+d2*10+d3;
 	}
 	
