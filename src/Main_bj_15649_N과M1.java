@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_s3_15649_N과M1 {
+public class Main_bj_15649_N과M1 {
 	static int n, m;
 	static int[] selected;
 	static boolean[] visited;
