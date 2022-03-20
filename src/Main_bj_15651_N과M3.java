@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_s3_15651_N과M3 {
+public class Main_bj_15651_N과M3 {
 	static int n, m;
 	static int[] selected;
 	static StringBuilder sb = new StringBuilder();
@@ -30,12 +30,9 @@ public class Main_bj_s3_15651_N과M3 {
 			return;
 		}
 		
-		//비내림차순
 		for(int i=1;i<=n;i++) {
-			if(cnt==0 || (cnt>0 && selected[cnt-1]<=i)) {
-				selected[cnt]=i;
-				perm(cnt+1);				
-			}
+			selected[cnt]=i;
+			perm(cnt+1);
 		}
 	}
 }
