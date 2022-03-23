@@ -4,7 +4,7 @@ import java.util.*;
 // 세 각의 합이 180이고, 두 각이 같은 경우에는 Isosceles
 // 세 각의 합이 180이고, 같은 각이 없는 경우에는 Scalene
 // 세 각의 합이 180이 아닌 경우에는 Error
-public class Main_bj_b4_10101_삼각형외우기 {
+public class Main_bj_10101_삼각형외우기 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_10101.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
