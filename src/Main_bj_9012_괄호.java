@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_s4_9012_괄호 {
+public class Main_bj_9012_괄호 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_9012.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
