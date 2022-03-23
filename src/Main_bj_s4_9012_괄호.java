@@ -8,16 +8,15 @@ public class Main_bj_s4_9012_괄호 {
 		StringBuilder sb = new StringBuilder();
 		int N = Integer.parseInt(br.readLine());
 		boolean chk;
-		String input;
 		Stack<Character> s= new Stack<>();
 		for(int n=0;n<N;n++) {
-			input=br.readLine();
+			String input=br.readLine();
 			chk=true;
 			for(int i=0;i<input.length();i++) {
 				if(input.charAt(i)=='(') {
 					s.push(input.charAt(i));
 				}else if(input.charAt(i)==')') {
-					if(s.isEmpty() || s.peek()!='(') {
+					if(s.isEmpty() || s.peek()!='(') { //올바른 괄호 문자열 X
 						chk=false;
 						s.clear();
 						break;
@@ -25,7 +24,8 @@ public class Main_bj_s4_9012_괄호 {
 						continue;
 					}
 				}
-				if(i==input.length()-1) {
+				
+				if(i==input.length()-1) { // 입력 받은 문자열 탐색 끝
 					if(!s.isEmpty()) {
 						chk=false;
 						s.clear();
@@ -37,6 +37,6 @@ public class Main_bj_s4_9012_괄호 {
 		}
 		br.close();
 		sb.setLength(sb.length()-1);
-		System.out.print(sb);
+		System.out.print(sb.toString());
 	}
 }
