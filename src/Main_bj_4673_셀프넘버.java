@@ -32,7 +32,7 @@ public class Main_bj_4673_셀프넘버 {
 		
 		if(isNotSelfNumber[constructure]) return; // 셀프 넘버가 아니라면
 		
-		isNotSelfNumber[constructure] = true; // 현재 구한 생성자 = 셀프넘버
+		isNotSelfNumber[constructure] = true; // 현재 구한 생성자 = 셀프넘버X
 		
 		d(constructure);
 	}
