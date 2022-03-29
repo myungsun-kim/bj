@@ -1,7 +1,10 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.Stack;
+import java.util.StringTokenizer;
 
-public class Main_bj_s4_10828_스택 {
+public class Main_bj_10828_스택 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10828.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -44,7 +47,7 @@ public class Main_bj_s4_10828_스택 {
 				break;
 			}
 		}
-		sb.setLength(sb.length()-1);
-		System.out.print(sb);
+		br.close();
+		System.out.print(sb.toString());
 	}
 }
