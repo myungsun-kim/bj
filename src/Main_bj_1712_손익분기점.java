@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_b4_1712_손익분기점 {
+public class Main_bj_1712_손익분기점 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1712.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
