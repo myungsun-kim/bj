@@ -1,8 +1,13 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.Map;
+import java.util.StringTokenizer;
+import java.util.TreeMap;
+
 // 파일을 확장자 별로 정리해서 몇 개씩 있는지
 // 확장자들을 사전 순으로 정렬
-public class Main_bj_s4_20291_파일정리 {
+public class Main_bj_20291_파일정리 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_20291.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -14,11 +19,11 @@ public class Main_bj_s4_20291_파일정리 {
 			StringTokenizer st = new StringTokenizer(br.readLine(),".");
 			st.nextToken();
 			String input = st.nextToken(); //확장자명
-			if(map.get(input) == null) { //맵에 저장되어 있지 않은 확장자라면
-				map.put(input, 1);
-			}else { //이미 있는 확장자라면
-				map.put(input, map.get(input)+1);
+			int val = 1;
+			if(map.get(input) != null) { //맵에 이미 저장되어 있다면
+				val += map.get(input);
 			}
+			map.put(input, val);
 		}
 
 		for(Map.Entry<String, Integer> entry : map.entrySet()) {
