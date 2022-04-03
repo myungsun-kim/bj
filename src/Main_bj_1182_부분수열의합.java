@@ -1,11 +1,14 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 // N개의 정수로 이루어진 수열이 있을 때, 크기가 양수인 부분수열 중 수열의 원소를 다 더한 값이 S가 되는 경우의 수 출력
-public class Main_bj_s2_1182_부분수열의합 {
+public class Main_bj_1182_부분수열의합 {
 	static int[] arr;
 	static int N,S,answer;
 	public static void main(String[] args) throws Exception{
-//		System.setIn(new FileInputStream("res/input_bj_1182.txt"));
+		System.setIn(new FileInputStream("res/input_bj_1182.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		N=Integer.parseInt(st.nextToken()); 
