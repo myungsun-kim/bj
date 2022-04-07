@@ -1,16 +1,19 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
-public class Main_bj_s4_10845_큐 {
+public class Main_bj_10845_큐 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10845.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Queue<Integer> queue = new ArrayDeque<>();
 		int N = Integer.parseInt(br.readLine());
-		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		for(int i=0;i<N;i++) {
-			st=new StringTokenizer(br.readLine());
+			StringTokenizer st=new StringTokenizer(br.readLine());
 			switch(st.nextToken()) {
 			case "push":
 				queue.offer(Integer.parseInt(st.nextToken()));
