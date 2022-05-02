@@ -1,5 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 public class Main_bj_1260_DFS와BFS {
 	static int n,m,v;
@@ -45,7 +49,7 @@ public class Main_bj_1260_DFS와BFS {
 	}
 	
 	static void bfs() {
-		Queue<Integer> queue = new LinkedList<>();
+		Queue<Integer> queue = new ArrayDeque<>();
 		visited = new boolean[n+1];
 		queue.offer(v);
 		visited[v] = true;
