@@ -1,5 +1,6 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 
 public class Main_bj_2775_부녀회장이될테야 {
 	static int cnt;
