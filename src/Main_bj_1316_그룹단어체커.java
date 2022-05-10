@@ -1,7 +1,8 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 
-public class Main_bj_s5_1316_그룹단어체커 {
+public class Main_bj_1316_그룹단어체커 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1316.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -12,7 +13,7 @@ public class Main_bj_s5_1316_그룹단어체커 {
 			boolean[] chk = new boolean[26];
 			word = br.readLine();
 			for(int j=0;j<word.length();j++) {
-				if(chk[word.charAt(j)-97]) break;
+				if(chk[word.charAt(j)-97]) break; //이전에 나온 적이 있음
 				if(j+1<word.length() && word.charAt(j)!=word.charAt(j+1)) {
 					chk[word.charAt(j)-97]=true;
 					continue;
