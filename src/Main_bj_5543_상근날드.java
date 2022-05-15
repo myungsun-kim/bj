@@ -1,8 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 // 세트로 구매시 (햄버거+음료)가격 합계-50 / 가장 싼 세트 메뉴의 가격 출력
 // 1-3 버거의 가격 4 콜라의 가격 5 사이다의 가격(가격은 100이상 2000이하)
-public class Main_bj_b4_5543_상근날드 {
+public class Main_bj_5543_상근날드 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_5543.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
