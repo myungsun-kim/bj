@@ -1,5 +1,7 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main_bj_9093_단어뒤집기 {
 	public static void main(String[] args) throws Exception{
