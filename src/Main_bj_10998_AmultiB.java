@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main_bj_b5_10998_AmultiB {
+public class Main_bj_10998_AmultiB {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
