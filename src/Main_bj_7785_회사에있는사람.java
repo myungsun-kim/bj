@@ -1,7 +1,12 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.StringTokenizer;
 
-public class Main_bj_s5_7785_회사에있는사람 {
+public class Main_bj_7785_회사에있는사람 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_7785.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
