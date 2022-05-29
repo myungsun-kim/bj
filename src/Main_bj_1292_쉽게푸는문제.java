@@ -1,9 +1,12 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 // 1을 한 번, 2를 두 번, 3을 세 번 , ... 식의 수열을 만들어 일정한 구간을 주면 그 구간의 합을 구함
 // 첫째 줄에 구간의 시작과 끝을 나타내는 정수 a,b가 주어진다
 // n*(n-1)/2
-public class Main_bj_s5_1292_쉽게푸는문제 {
+public class Main_bj_1292_쉽게푸는문제 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1292.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
