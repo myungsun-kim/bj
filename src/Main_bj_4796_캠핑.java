@@ -1,8 +1,11 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 // 캠핑장은 연속하는 p일 중 l일 동안만 사용할 수 있다. 이제 막 v일짜리 휴가를 시작했을때
 // 캠핑장을 최대 며칠동안 사용할 수 있을까?
-public class Main_bj_s5_4796_캠핑 {
+public class Main_bj_4796_캠핑 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_4796.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
