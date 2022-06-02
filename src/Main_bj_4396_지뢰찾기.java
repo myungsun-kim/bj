@@ -1,9 +1,12 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 // 지뢰찾기는 nxn 격자 위에서 이루어짐
 // 지뢰가 없는 지점을 건드리면, 그곳의 상하좌우 혹은 대각선으로 인접한 8개의 칸에 지뢰가 몇 개 있는지 알려주는 0과 8사이의 숫자가 나타남
 // 일부가 플레이된 게임의 정보를 읽어 해당하는 격자 출력
-public class Main_bj_s5_4396_지뢰찾기 {
+public class Main_bj_4396_지뢰찾기 {
 	static int n;
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_4396.txt"));
