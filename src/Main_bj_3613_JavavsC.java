@@ -1,8 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 // Java는 낙타표기법, C++은 소문자에 _를 구분자로 사용. 
 // Java형식의 변수명은 C++ 형식으로, C++형식의 변수명은 Java형식으로 변환해줌
-public class Main_bj_s5_3613_JavavsC {
+public class Main_bj_3613_JavavsC {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_3613.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
