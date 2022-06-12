@@ -1,7 +1,9 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 
 //M이상 N이하의 자연수 중 소수인 것을 모두 골라 이들 소수의 합과 최솟값을 찾는 프로그램
-public class Main_bj_s5_2581_소수 {
+public class Main_bj_2581_소수 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_2581.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
