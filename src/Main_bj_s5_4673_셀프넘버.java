@@ -1,5 +1,4 @@
-import java.io.*;
-import java.util.*;
+
 public class Main_bj_s5_4673_셀프넘버 {
 	public static void main(String[] args) throws Exception{
 		boolean[] exist = new boolean[10001];//1~10000인덱스 사용
