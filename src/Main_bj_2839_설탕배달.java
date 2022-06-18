@@ -1,5 +1,5 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Main_bj_2839_설탕배달 {
 	static int N;
