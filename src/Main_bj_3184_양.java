@@ -17,20 +17,20 @@ import java.util.StringTokenizer;
 public class Main_bj_3184_양 {
 	static int[] dr = {-1,0,1,0};
 	static int[] dc = {0,-1,0,1};
-	static int r, c, wolf, sheep;
+	static int row, col, wolf, sheep;
 	static int[][] map;
 	
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_3184.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		r = Integer.parseInt(st.nextToken());
-		c = Integer.parseInt(st.nextToken());
-		map = new int[r][c];
+		row = Integer.parseInt(st.nextToken());
+		col = Integer.parseInt(st.nextToken());
+		map = new int[row][col];
 
-		for(int i=0;i<r;i++) {
+		for(int i=0;i<row;i++) {
 			String tmp = br.readLine();
-			for(int j=0;j<c;j++) {
+			for(int j=0;j<col;j++) {
 				switch(tmp.charAt(j)) {
 				case '.': //빈 필드
 					map[i][j] = 0;
@@ -50,8 +50,8 @@ public class Main_bj_3184_양 {
 			}
 		}
 		
-		for(int i=0;i<r;i++) {
-			for(int j=0;j<c;j++) {				
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<col;j++) {				
 				if(map[i][j]<3) {
 					bfs(i,j);
 				}
@@ -90,7 +90,7 @@ public class Main_bj_3184_양 {
 	}
 	
 	static boolean check(int row, int col) {
-		if(row>=r || col>=c || row<0 || col<0) return false;
+		if(row>=row || col>=col || row<0 || col<0) return false;
 		return true;
 	}
 }
