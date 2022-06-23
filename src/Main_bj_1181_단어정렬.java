@@ -1,7 +1,12 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashSet;
 
-public class Main_bj_s5_1181_단어정렬 {
+public class Main_bj_1181_단어정렬 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1181.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
