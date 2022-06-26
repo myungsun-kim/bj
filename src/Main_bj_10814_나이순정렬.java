@@ -1,6 +1,10 @@
-import java.io.*;
-import java.util.*;
-
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.StringTokenizer;
 
 class Person{
 	int age;
@@ -13,17 +17,16 @@ class Person{
 	}
 }
 
-public class Main_bj_s5_10814_나이순정렬 {
+public class Main_bj_10814_나이순정렬 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10814.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		int n = Integer.parseInt(br.readLine());
 		ArrayList<Person> list = new ArrayList<>();
-		StringTokenizer st;
 		
 		for(int i=0;i<n;i++) {
-			st = new StringTokenizer(br.readLine()," ");
+			StringTokenizer st = new StringTokenizer(br.readLine()," ");
 			list.add(new Person(Integer.parseInt(st.nextToken()),st.nextToken()));
 		}
 		Collections.sort(list, new Comparator<Person>() {
@@ -40,6 +43,6 @@ public class Main_bj_s5_10814_나이순정렬 {
 		}
 		br.close();
 		sb.setLength(sb.length()-1);
-		System.out.print(sb);
+		System.out.print(sb.toString());
 	}
 }
