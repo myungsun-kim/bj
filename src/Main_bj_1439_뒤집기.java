@@ -1,8 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 // 0과 1로만 이루어진 문자열 S를 가지고 있고, 이 문자열 S에 있는 모든 숫자를 전부 같게 만드려고 한다
 // S에서 연속된 하나 이상의 숫자를 잡고 모두 뒤집음
-public class Main_bj_s5_1439_뒤집기 {
+public class Main_bj_1439_뒤집기 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_1439.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
