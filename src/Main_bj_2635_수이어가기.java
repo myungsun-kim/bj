@@ -1,5 +1,8 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 // 1. 첫 번째 수로 양의 정수가 주어짐
 // 2. 두 번째 수는 양의 정수 중에서 하나를 선택
 // 3. 세 번째부터 이후에 나오는 모든 수는 앞의 앞의 수에서 앞의 수를 빼서 만든다. 
@@ -8,7 +11,7 @@ import java.util.*;
 // 	  i>=3 arr[i]=arr[i-2]-arr[i-1]
 // 4. 음의 정수가 만들어지면, 이 음의 정수를 버리고 더 이상 수를 만들지 않음
 // 두 번째 수는 첫 번째 수보다 작은 양의 정수
-public class Main_bj_s5_2635_수이어가기 {
+public class Main_bj_2635_수이어가기 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_2635.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -44,6 +47,6 @@ public class Main_bj_s5_2635_수이어가기 {
 			sb.append(answer[i]).append(' ');
 		}
 		br.close();
-		System.out.print(sb);
+		System.out.print(sb.toString());
 	}
 }
