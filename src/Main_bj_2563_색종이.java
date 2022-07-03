@@ -1,17 +1,17 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
-public class Main_bj_s5_2563_색종이 {
+public class Main_bj_2563_색종이 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_2563.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		int N = Integer.parseInt(br.readLine()); //색종이의 수
 		int x,y,cnt=0;
 		boolean[][] map = new boolean[100][100];
 		for(int n=0;n<N;n++) {
-			st = new StringTokenizer(br.readLine());
+			StringTokenizer st = new StringTokenizer(br.readLine());
 			x=Integer.parseInt(st.nextToken());
 			y=Integer.parseInt(st.nextToken());
 			for(int i=x;i<x+10;i++) {
@@ -25,7 +25,8 @@ public class Main_bj_s5_2563_색종이 {
 				if(map[i][j]) cnt++;
 			}
 		}
+		br.close();
 		sb.append(cnt);
-		System.out.print(sb);
+		System.out.print(sb.toString());
 	}
 }
