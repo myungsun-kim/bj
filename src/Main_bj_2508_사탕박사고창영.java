@@ -1,5 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
 // .:빈곳 / o:사탕의 먹을 수 있는 부분 / <>v^:사탕껍질
 // 사탕은 >o<
 // v
@@ -8,7 +12,7 @@ import java.util.*;
 // 두 가지 모습만 있다
 // >o.는 사탕으로 치지 않는다. 사탕의 개수를 출력하는 프로그램 작성
 // . o < > v ^는 각각 아스키코드 46 111 60 62 118 94 
-public class Main_bj_s5_2508_사탕박사고창영 {
+public class Main_bj_2508_사탕박사고창영 {
 	static int[] dr = {-1,1,0,0};
 	static int[] dc = {0,0,-1,1};
 	static int[] dw = {118,94,62,60};//포장지 상태
