@@ -1,5 +1,8 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 // 1m^2의 넓이에 자라는 참외 개수를 헤아린 다음 참외밭의 넓이를 구하면 비례식을 이용해 참외의 총개수를 구할 수 있음
 // 참외밭은 육각형. 밭의 경계는 동서 방향이나 남북
 // 입력받을때 1동 2서 3남 4북. 반시계 방향으로
@@ -7,11 +10,10 @@ import java.util.*;
 // ┌ 2 3 1 (4 1) 4 // (2 3)
 // └ (2 4) 2 3 1 4 // (3 1) // 4 2 3 1 4 2
 // ┘ 2 (3 2) 3 1 4 // (1 4)
-public class Main_bj_s5_2477_참외밭 {
+public class Main_bj_2477_참외밭 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_2477.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		int[][] map = new int[6][2]; //방향과 크기를 입력받음
 		int max_width=0, max_height=0;
@@ -19,7 +21,7 @@ public class Main_bj_s5_2477_참외밭 {
 		int small, large;
 		int k = Integer.parseInt(br.readLine()); //1m^2 넓이에 자라는 참외의 개수
 		for(int i=0;i<6;i++) {//참외밭은 육각형
-			st = new StringTokenizer(br.readLine());
+			StringTokenizer st = new StringTokenizer(br.readLine());
 			map[i][0] = Integer.parseInt(st.nextToken());//방향
 			map[i][1] = Integer.parseInt(st.nextToken());//크기
 			if(map[i][0] == 1 || map[i][0] == 2) {
