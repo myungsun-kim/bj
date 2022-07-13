@@ -1,8 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 // 1<=n<=10000
 // 특별한 수 = 연속한 두 소수의 곱
-public class Main_bj_s5_24039_2021은무엇이특별할까 {
+public class Main_bj_24039_2021은무엇이특별할까 {
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_24039.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
