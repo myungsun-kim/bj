@@ -1,12 +1,14 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 // 두 자연수의 최소 공배수 구하기
-public class Main_bj_s5_1934_최소공배수 {
+public class Main_bj_1934_최소공배수 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1934.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
-		final int max = 45000; //숫자의 최대값 
 		
 		int t = Integer.parseInt(br.readLine());
 		
