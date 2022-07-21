@@ -1,7 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+
 // 가운데부터 달팽이 모양으로 채워감
-public class Main_bj_s5_1913_달팽이 {
+public class Main_bj_1913_달팽이 {
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_1913.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
