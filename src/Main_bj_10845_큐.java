@@ -6,52 +6,52 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main_bj_10845_큐 {
+	static int[] queue;
 	public static void main(String[] args) throws Exception{
 		System.setIn(new FileInputStream("res/input_bj_10845.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		Queue<Integer> queue = new ArrayDeque<>();
-		int N = Integer.parseInt(br.readLine());
+		final int range = 10000;
+		queue = new int[range+1];
+		int idx = 0;
+		int n = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
-		for(int i=0;i<N;i++) {
+		for(int i=0;i<n;i++) {
 			StringTokenizer st=new StringTokenizer(br.readLine());
 			switch(st.nextToken()) {
 			case "push":
-				queue.offer(Integer.parseInt(st.nextToken()));
+				queue[idx++] = Integer.parseInt(st.nextToken());
 				break;
 			case "pop":
-				if(!queue.isEmpty()) {
-					sb.append(queue.poll());
+				if(idx>0) {
+					sb.append(queue[0]);
+					pull(--idx);
 				}else {
 					sb.append(-1);
 				}
 				sb.append("\n");
 				break;
 			case "size":
-				sb.append(queue.size()).append("\n");
+				sb.append(idx).append("\n");
 				break;
 			case "empty":
-				if(queue.isEmpty()) {
-					sb.append(1);
-				}else {
+				if(idx>0) {
 					sb.append(0);
+				}else {
+					sb.append(1);
 				}
 				sb.append("\n");
 				break;
 			case "front":
-				if(!queue.isEmpty()) {
-					sb.append(queue.peek());
+				if(idx>0) {
+					sb.append(queue[0]);
 				}else {
 					sb.append(-1);
 				}
 				sb.append("\n");
 				break;
 			case "back":
-				if(!queue.isEmpty()) {
-					for(int j=0;j<queue.size()-1;j++) {
-						queue.offer(queue.poll());
-					}
-					sb.append(queue.peek());
-					queue.offer(queue.poll());
+				if(idx>0) {
+					sb.append(queue[idx-1]);
 				}else {
 					sb.append(-1);
 				}
@@ -59,7 +59,13 @@ public class Main_bj_10845_큐 {
 				break;
 			}
 		}
-		sb.setLength(sb.length()-1);
 		System.out.print(sb);
+	}
+	
+	static void pull(int idx) {
+		for(int i=0;i<idx;i++) {
+			queue[i] = queue[i+1];
+		}
+		queue[idx] = 0;
 	}
 }
