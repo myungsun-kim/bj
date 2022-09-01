@@ -1,6 +1,6 @@
 import java.io.*;
 // 서로 다른 N개의 자연수의 합이 S. S가 주어질 때 자연수 N의 최댓값 구하기
-public class Main_bj_s5_1789_수들의합 {
+public class Main_bj_1789_수들의합 {
 	static long N;
 	public static void main(String[] args) throws Exception{
 //		System.setIn(new FileInputStream("res/input_bj_1789.txt"));
