@@ -3,7 +3,7 @@ import java.util.*;
 // 징검다리에서 점프 할 때 그 징검다리에 쓰여 있는 수의 배수만큼 떨어져 있는 곳으로 갈 수 있음
 // a번째 징검다리에서 b번째 징검다리까지 가려고 할 때 최소 몇 번 점프를 하며 b번째 징검다리까지 갈 수 있는지 알아보는 프로그램 작성
 // 갈 수 없을 경우 -1
-public class Main_bj_s3_1326_폴짝폴짝 {
+public class Main_bj_1326_폴짝폴짝 {
 	static int n, answer;
 	static int[] arr;
 	public static void main(String[] args) throws Exception{
