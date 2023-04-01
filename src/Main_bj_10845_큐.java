@@ -24,7 +24,7 @@ public class Main_bj_10845_큐 {
 			case "pop":
 				if(idx>0) {
 					sb.append(queue[0]);
-					pull(--idx);
+					pull(idx--);
 				}else {
 					sb.append(-1);
 				}
@@ -63,7 +63,7 @@ public class Main_bj_10845_큐 {
 	}
 	
 	static void pull(int idx) {
-		for(int i=0;i<idx;i++) {
+		for(int i=0;i<idx-1;i++) {
 			queue[i] = queue[i+1];
 		}
 		queue[idx] = 0;
