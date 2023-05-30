@@ -1,0 +1,48 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.FileInputStream;
+import java.util.StringTokenizer;
+import java.util.Stack;
+
+public class Main_bj_17952_과제는끝나지않아 {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.setIn(new FileInputStream("res/input_bj_17952.txt"));
+        int n = Integer.parseInt(br.readLine());
+        int totalScore = 0;
+        int score = 0;
+        int times = 0;
+        Stack<int[]> stack = new Stack<>();
+
+        for (int i = 0; i < n; ++i) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            int task = Integer.parseInt(st.nextToken());
+
+            // 과제를 받았을 경우
+            if (task == 1) {
+                if (times != 0) {
+                    stack.push(new int[] { score, times });
+                }
+                score = Integer.parseInt(st.nextToken());
+                times = Integer.parseInt(st.nextToken());
+            }
+
+            // 과제 진행
+            if (times != 0) {
+                --times;
+            } else {
+                if (!stack.isEmpty()) {
+                    int[] tmp = stack.pop();
+                    score = tmp[0];
+                    times = tmp[1] - 1;
+                }
+            }
+            if (times == 0) {
+                totalScore += score;
+                score = 0;
+            }
+        }
+
+        System.out.print(totalScore);
+    }
+}
