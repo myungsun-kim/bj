@@ -1,0 +1,14 @@
+15
+orangeateorenge
+
+YES
+--
+2
+cc
+
+NO
+--
+14
+aaaaaabaaaaaaa
+
+YES
