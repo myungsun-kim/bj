@@ -20,8 +20,8 @@ public class Main_bj_9519_졸려 {
 			for(int j=0;j<k;++j) {
 				int before = j+1; 
 				int after = length-before;
-				
 				char beforeWord = word[before];
+				
 				for(int l=before;l<after;++l) {
 					word[l] = word[l+1];
 				}
